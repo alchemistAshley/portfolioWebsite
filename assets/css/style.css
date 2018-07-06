@@ -20,17 +20,19 @@
 }
 
 #aboutLeft {
-    background: #313131;
+    background: #ffffff;
+    height: 100%;
 }
 
 #aboutSection {
-    color: #f7cac9;
+    color: #313131;
     font-family: 'Playfair Display', serif;
 }
 
 #aboutRight {
-    width: 50%;
-    height: auto;
+    background: #313131;
+    height: 100%;
+    color: #ffffff;
 }
 
 #aboutPic {
@@ -40,7 +42,7 @@
 }
 
 #portfolioSection {
-    color: #313131;
+    color: #ffffff;
     font-family: 'Playfair Display', serif;
 }
 
@@ -50,12 +52,29 @@
 }
 
 #portfolioRight {
-    background: #313131;
+    background: #f7cac9;
+    height: 100%;
+    color: #f7cac9;
 }
 
-.footer {
+#contactLeft {
+    background: #313131;
+    height: 100%;
+}
+
+#contactRight {
+    background: #ffffff;
+    height: 100%;
+}
+
+#contactSection {
+    font-family: 'Playfair Display', serif;
+    color: #f7cac9;
+}
+
+#footer {
+    background: #f7cac9;
     width: 100%;
     height: 5%;
-    background: #313131;
     color: #ffffff;
 }

@@ -5,18 +5,15 @@
         <title>Ashley Winnop</title>
 
         <!-- scripts & links -->
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
-        
-        
-        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">       
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" />
-
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
         <!-- Custom CSS -->
-
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
     </head>
 
@@ -34,17 +31,17 @@
                         <div class="uk-navbar-center">
                         
                             <ul class="uk-navbar-nav">
-                                <li><a href="#">About</a></li>
+                                <li><a href="#about" uk-scroll>About</a></li>
                                 <li>
-                                    <a href="#">Portfolio</a>
+                                    <a href="#portfolio" uk-scroll>Portfolio</a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">Resume</a></li>
-                                            <li><a href="#">Github</a></li>
+                                            <li><a class="uk-link-muted" href="assets/downloadable/Ashley Winnop.pdf" download>Resume</a></li>
+                                            <li><a href="https://github.com/alchemistAshley">Github</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#contact" uk-scroll>Contact</a></li>
                             </ul>
                         
                         </div>
@@ -56,91 +53,122 @@
 
         </header>
 
-        <div class="about">
+        <div id="about">
             <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
                 <div>
                     <div class="uk-tile" id="aboutLeft">
-                        <h2 class="uk-h2" id="aboutSection">About</p>
-                        <img id="aboutPic" src="assets/images/ARW.jpg" alt="Ashley Winnop"/>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-tile uk-tile-default">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio">
-            <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
-                <div>
-                    <div class="uk-tile" id="portfolioLeft">
-                        <h2 class="uk-h2" id="portfolioSection">Portfolio</p>
-                        <p>Download my <a href="assets/downloadable/Ashley Winnop.pdf" download>Resume</a></p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-tile" id="portfolioRight">
-                        <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
-                            <div>
-                                <div class="uk-tile uk-tile-default">
-                                    <p class="uk-h4">Default</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-tile uk-tile-muted">
-                                    <p class="uk-h4">Muted</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-tile uk-tile-primary">
-                                    <p class="uk-h4">Primary</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-tile uk-tile-secondary">
-                                    <p class="uk-h4">Secondary</p>
-                                </div>
-                            </div>
+                        <div class="uk-position-center">
+                            <h2 class="uk-h2" id="aboutSection">About</p>
+                            <img id="aboutPic" src="assets/images/ARW.jpg" alt="Ashley Winnop"/>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="uk-tile uk-tile-default" id="aboutRight">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt eget nullam non nisi est sit amet. Id semper risus in hendrerit gravida rutrum quisque. Dis parturient montes nascetur ridiculus mus.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="contact">
+        <div id="portfolio">
             <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
                 <div>
-                    <div class="uk-tile" id="contactLeft">
-                        <h2 class="uk-h2" id="contactSection">Contact</p>
-                        <!-- contact icons: github -->
-                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-                        <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                    <div class="uk-tile" id="portfolioLeft">
+                        <div class="uk-position-center">
+                            <h2 class="uk-h2" id="portfolioSection">Portfolio</h2>
+                                <!-- <h7 class="uk-text-meta">Download my -->
+                                <a class="uk-icon-button uk-margin-small-right" uk-tooltip="title: Resume; pos: bottom" uk-icon="download" href="assets/downloadable/Ashley Winnop.pdf" download></a>
+                                <a href="https://github.com/alchemistAshley" class="uk-icon-button  uk-margin-small-right" uk-icon="github-alt" uk-tooltip="title: Github; pos: bottom"></a>
+                                <!-- </h7> --> 
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="portfolioRight">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+                        <ul class="uk-slideshow-items">
+                            <li class="uk-transition-toggle" tabindex="0">
+                                <img src="assets/images/pexels-photo-1005716.jpeg" alt="" uk-cover>
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h3 class="uk-margin-remove">Title</h3></div>
+                                    <div class="uk-transition-slide-bottom-small">
+                                        <h6 class="uk-margin-remove">Language</h6>
+                                        <h6 class="uk-margin-remove">Framework</h6>
+                                        <h6 class="uk-margin-remove">Skill</h6>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/pexels-photo-971174.jpeg" alt="" uk-cover>
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h3 class="uk-margin-remove">Title</h3></div>
+                                    <div class="uk-transition-slide-bottom-small">
+                                        <h6 class="uk-margin-remove">Language</h6>
+                                        <h6 class="uk-margin-remove">Framework</h6>
+                                        <h6 class="uk-margin-remove">Skill</h6>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <img src="assets/images/pexels-photo-1005714.jpeg" alt="" uk-cover>
+                                <div class="uk-position-center">
+                                    <div class="uk-transition-slide-top-small"><h3 class="uk-margin-remove">Title</h3></div>
+                                    <div class="uk-transition-slide-bottom-small">
+                                        <h6 class="uk-margin-remove">Language</h6>
+                                        <h6 class="uk-margin-remove">Framework</h6>
+                                        <h6 class="uk-margin-remove">Skill</h6>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+            
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile " id="contactLeft">
+                        <div class="uk-position-center">
+                            <h2 class="uk-h2" id="contactSection">Contact</h2>
+                                <!-- contact icons: instagram, Gmail, twitter -->
+                                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="location" uk-tooltip="title: Denver, CO; pos: bottom"></a>
+                                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="receiver" uk-tooltip="title: 208.691.5996; pos: bottom"></a>
+                                <a href="mailto:arwinnop@gmail.com?Subject=Hello" class="uk-icon-button" uk-icon="mail" uk-tooltip="title: arwinnop@gmail.com; pos: bottom"></a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div>
-                    <div class="uk-tile">
-                        <form>
+                    <div class="uk-tile" id="contactRight">
+                        <form action="https://formspree.io/arwinnop@gmail.com" method="POST">
                             <fieldset class="uk-fieldset">
                     
                                 <div class="uk-margin">
-                                    <input class="uk-input" type="text" placeholder="Name">
+                                    <input class="uk-input" type="text" name="name" placeholder="Name">
                                 </div>
 
                                 <div class="uk-margin">
-                                    <input class="uk-input" type="text" placeholder="Email Address">
+                                    <input class="uk-input" type="email" name="_replyto" placeholder="Email Address">
                                 </div>
-                            
                         
                                 <div class="uk-margin">
-                                    <textarea class="uk-textarea" rows="5" placeholder="Leave me a message... "></textarea>
+                                    <textarea class="uk-textarea" rows="5" type="text" name="message" placeholder="Leave me a message... "></textarea>
                                 </div>
                             </fieldset>
-                            <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom">Send</button>
+                            <button class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom" type="submit" value="Send">Send</button>
                         </form>
                     </div>
                 </div>
@@ -148,9 +176,16 @@
 
         </div>
 
-        <footer class="footer">
-            <p class="uk-text-center uk-padding-small"> &copy; Ashley Winnop | 2018</p>
+        <footer id="footer">
+            <div>
+                <p class="uk-text-center uk-padding-small uk-padding-remove-bottom uk-text-meta">&copy; Ashley Winnop 2018</p>
+            </div>
         </footer>
 
     </body>
 </html>
+
+<!-- TODO: 
+portfolio tiles
+fill out about me section
+update picture -->
